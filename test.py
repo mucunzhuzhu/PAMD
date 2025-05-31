@@ -126,7 +126,7 @@ def test(opt):
     for i in range(len(all_cond)): # all_cond = {list:35}  all_filenames = {list:35}
 
         batchsize = len(all_filenames[i])
-        seed_motion = np.load('gJS_sBM_cAll_d03_mJS3_ch02_slice0.npy')
+        seed_motion = np.load('standpose1.npy')
         seed_motion = seed_motion[:, 0]  # (1,1,151)
         seed_motion = torch.tensor(seed_motion)
         style_tensor = seed_motion.expand(batchsize, 150, 151)
