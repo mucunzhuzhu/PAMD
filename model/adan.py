@@ -8,7 +8,7 @@ def exists(val):
     return val is not None
 
 
-class Adan(Optimizer): # 这段代码是一个名为Adan的优化器类，继承自Optimizer类。
+class Adan(Optimizer): 
     def __init__(
         self,
         params,
