@@ -1,6 +1,9 @@
 ## PAMD
 **[PAMD: Plausibility-Aware Motion Diffusion Model for Long Dance Generation](https://www.arxiv.org/abs/2505.20056), [Arxiv](https://arxiv.org/html/2505.20056v1)**<br>
 *Abstract: Diffusion-based music-to-dance generation has made significant progress, yet existing methods still struggle to produce physically plausible motions. To address this, we propose Plausibility-Aware Motion Diffusion (PAMD), a framework for generating dances that are both musically aligned and physically realistic. The core of PAMD lies in the Plausible Motion Constraint (PMC), which leverages Neural Distance Fields (NDFs) to model the actual pose manifold and guide generated motions toward a physically valid pose manifold. To provide more effective guidance during generation, we incorporate Prior Motion Guidance (PMG), which uses standing poses as auxiliary conditions alongside music features. To further enhance realism for complex movements, we introduce the Motion Refinement with Foot-ground Contact (MRFC) module, which addresses foot-skating artifacts by bridging the gap between the optimization objective in linear joint position space and the data representation in nonlinear rotation space. Extensive experiments show that PAMD significantly improves musical alignment and enhances the physical plausibility of generated motions.*
+
+![Pipeline of the PAMD](figs/model_new.png)
+
 ## Requirements
 * We follow the environment configuration of [EDGE](https://github.com/Stanford-TML/EDGE) 
 
